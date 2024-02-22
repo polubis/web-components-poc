@@ -1,8 +1,18 @@
 {
-  "name": "@archana/utils",
-  "version": "0.0.1",
+  "name": "archanautils",
+  "version": "1.0.0",
   "dependencies": {},
   "main": "./index.js",
   "module": "./index.mjs",
-  "typings": "./index.d.ts"
+  "typings": "./index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polubis/web-components-poc"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": {
+    "name": "Adrian Połubiński"
+  }
 }
