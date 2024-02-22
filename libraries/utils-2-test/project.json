@@ -1,0 +1,23 @@
+{
+  "name": "utils-2-test",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "utils-2-test/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/utils-2-test",
+        "main": "utils-2-test/src/index.ts",
+        "tsConfig": "utils-2-test/tsconfig.lib.json",
+        "assets": ["utils-2-test/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs utils-2-test {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    }
+  },
+  "tags": []
+}

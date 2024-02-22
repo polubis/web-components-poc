@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@libraries/utils": ["utils/src/index.ts"]
+      "@libraries/utils": ["utils/src/index.ts"],
+      "@utils-2-test": ["utils-2-test/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
